@@ -62,6 +62,9 @@ def autotest():
 
 
 num=int(input("Enter amount of segments: "))
+if num==0:
+    print("Error! Wrong number...")
+    exit(-2)
 seg=[]
 for i in range(num):
     print("Write down", i+1, "segment...")
